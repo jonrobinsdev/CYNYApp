@@ -15,6 +15,8 @@
 		8F7D96DD1CCBECE400B2C3F2 /* CYNYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D96DC1CCBECE400B2C3F2 /* CYNYTests.swift */; };
 		8F7D96E81CCBECE400B2C3F2 /* CYNYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D96E71CCBECE400B2C3F2 /* CYNYUITests.swift */; };
 		8F7D96F61CCC057E00B2C3F2 /* SocialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D96F51CCC057E00B2C3F2 /* SocialLoginViewController.swift */; };
+		8FE154A11CCF17D700AE2844 /* CoordinatesInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE154A01CCF17D700AE2844 /* CoordinatesInputViewController.swift */; };
+		8FE154A31CCF20E000AE2844 /* CoordinatesInfoNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE154A21CCF20E000AE2844 /* CoordinatesInfoNib.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8F7D96E71CCBECE400B2C3F2 /* CYNYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYNYUITests.swift; sourceTree = "<group>"; };
 		8F7D96E91CCBECE400B2C3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F7D96F51CCC057E00B2C3F2 /* SocialLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginViewController.swift; sourceTree = "<group>"; };
+		8FE154A01CCF17D700AE2844 /* CoordinatesInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatesInputViewController.swift; sourceTree = "<group>"; };
+		8FE154A21CCF20E000AE2844 /* CoordinatesInfoNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoordinatesInfoNib.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				8F7D96C41CCBECE300B2C3F2 /* AppDelegate.swift */,
 				8F7D96F51CCC057E00B2C3F2 /* SocialLoginViewController.swift */,
+				8FE154A01CCF17D700AE2844 /* CoordinatesInputViewController.swift */,
+				8FE154A21CCF20E000AE2844 /* CoordinatesInfoNib.xib */,
 				8F7D96C81CCBECE400B2C3F2 /* Main.storyboard */,
 				8F7D96CE1CCBECE400B2C3F2 /* Assets.xcassets */,
 				8F7D96D01CCBECE400B2C3F2 /* LaunchScreen.storyboard */,
@@ -235,6 +241,7 @@
 				8F7D96D21CCBECE400B2C3F2 /* LaunchScreen.storyboard in Resources */,
 				8F7D96CF1CCBECE400B2C3F2 /* Assets.xcassets in Resources */,
 				8F7D96CA1CCBECE400B2C3F2 /* Main.storyboard in Resources */,
+				8FE154A31CCF20E000AE2844 /* CoordinatesInfoNib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7D96CD1CCBECE400B2C3F2 /* CYNY.xcdatamodeld in Sources */,
+				8FE154A11CCF17D700AE2844 /* CoordinatesInputViewController.swift in Sources */,
 				8F7D96F61CCC057E00B2C3F2 /* SocialLoginViewController.swift in Sources */,
 				8F7D96C51CCBECE300B2C3F2 /* AppDelegate.swift in Sources */,
 			);
@@ -490,6 +498,7 @@
 				8F7D96EE1CCBECE400B2C3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F7D96EF1CCBECE400B2C3F2 /* Build configuration list for PBXNativeTarget "CYNYTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +507,7 @@
 				8F7D96F11CCBECE400B2C3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F7D96F21CCBECE400B2C3F2 /* Build configuration list for PBXNativeTarget "CYNYUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +516,7 @@
 				8F7D96F41CCBECE400B2C3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
