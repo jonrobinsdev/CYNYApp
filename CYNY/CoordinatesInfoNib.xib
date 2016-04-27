@@ -7,30 +7,33 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CoordinatesInfoNib" customModule="CYNY" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6A1-fQ-agv">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aD2-i7-2YF">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aD2-i7-2YF" customClass="CoordinatesInfoNib" customModule="CYNY" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zI-D9-RKz">
-                                    <rect key="frame" x="320" y="15" width="30" height="36"/>
+                                    <rect key="frame" x="335" y="10" width="30" height="36"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="X">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="exitInfoView:" destination="iN0-l3-epB" eventType="touchUpInside" id="C05-Dg-4vF"/>
+                                    </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinates?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux7-Mb-XJN">
-                                    <rect key="frame" x="105" y="30" width="165" height="34"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinates?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ux7-Mb-XJN">
+                                    <rect key="frame" x="117" y="30" width="142" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mxg-7I-Vam">
-                                    <rect key="frame" x="25" y="87" width="325" height="96"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Mxg-7I-Vam">
+                                    <rect key="frame" x="25" y="81" width="325" height="96"/>
                                     <string key="text">The coordinates are the numbers you received when you donated on our website, cyny.org. You'll find them on the wristband and point to the unique location where your donation was invested.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -40,12 +43,12 @@
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="Mxg-7I-Vam" secondAttribute="trailing" constant="25" id="2Lg-RI-0d3"/>
                                 <constraint firstItem="Mxg-7I-Vam" firstAttribute="leading" secondItem="aD2-i7-2YF" secondAttribute="leading" constant="25" id="2gO-Ka-yd5"/>
-                                <constraint firstItem="3zI-D9-RKz" firstAttribute="top" secondItem="aD2-i7-2YF" secondAttribute="top" constant="15" id="6N2-Es-g4Z"/>
+                                <constraint firstItem="3zI-D9-RKz" firstAttribute="top" secondItem="aD2-i7-2YF" secondAttribute="top" constant="10" id="6N2-Es-g4Z"/>
                                 <constraint firstItem="Ux7-Mb-XJN" firstAttribute="centerX" secondItem="aD2-i7-2YF" secondAttribute="centerX" id="9X0-WY-Bvs"/>
-                                <constraint firstItem="Mxg-7I-Vam" firstAttribute="top" secondItem="Ux7-Mb-XJN" secondAttribute="bottom" constant="20" id="Erc-XP-8Gr"/>
+                                <constraint firstItem="Mxg-7I-Vam" firstAttribute="top" secondItem="Ux7-Mb-XJN" secondAttribute="bottom" constant="10" id="Erc-XP-8Gr"/>
                                 <constraint firstItem="Mxg-7I-Vam" firstAttribute="centerY" secondItem="aD2-i7-2YF" secondAttribute="centerY" constant="25" id="Gcl-fO-NbC"/>
                                 <constraint firstItem="Ux7-Mb-XJN" firstAttribute="top" secondItem="aD2-i7-2YF" secondAttribute="top" constant="30" id="OSH-O3-kaE"/>
-                                <constraint firstAttribute="trailing" secondItem="3zI-D9-RKz" secondAttribute="trailing" constant="25" id="QV5-cj-nFd"/>
+                                <constraint firstAttribute="trailing" secondItem="3zI-D9-RKz" secondAttribute="trailing" constant="10" id="QV5-cj-nFd"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
@@ -68,6 +71,36 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wN3-95-Wd1">
                             <rect key="frame" x="0.0" y="210" width="375" height="123"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do I donate?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Xw1-ef-CUq">
+                                    <rect key="frame" x="94" y="5" width="187" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Visit our website cyny.org and you'll find the donate options right there on our home page! Boom baby." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5ol-71-Z4u">
+                                    <rect key="frame" x="25" y="42" width="325" height="58"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Xw1-ef-CUq" firstAttribute="centerX" secondItem="wN3-95-Wd1" secondAttribute="centerX" id="Bgz-Kn-jat"/>
+                                <constraint firstItem="5ol-71-Z4u" firstAttribute="leading" secondItem="wN3-95-Wd1" secondAttribute="leading" constant="25" id="D96-pX-LLx"/>
+                                <constraint firstAttribute="bottom" secondItem="5ol-71-Z4u" secondAttribute="bottom" constant="13" id="D9B-tK-gGj"/>
+                                <constraint firstItem="5ol-71-Z4u" firstAttribute="top" secondItem="Xw1-ef-CUq" secondAttribute="bottom" constant="31" id="Ihi-iY-ze5"/>
+                                <constraint firstAttribute="trailing" secondItem="5ol-71-Z4u" secondAttribute="trailing" constant="25" id="iWT-NK-Tf4"/>
+                                <constraint firstItem="5ol-71-Z4u" firstAttribute="centerY" secondItem="wN3-95-Wd1" secondAttribute="centerY" constant="10" id="mWj-xW-Wtm"/>
+                                <constraint firstItem="5ol-71-Z4u" firstAttribute="top" secondItem="Xw1-ef-CUq" secondAttribute="bottom" constant="2" id="xTf-CT-qpz"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="D9B-tK-gGj"/>
+                                    <exclude reference="Ihi-iY-ze5"/>
+                                    <exclude reference="xTf-CT-qpz"/>
+                                </mask>
+                            </variation>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2f-hW-xe8" userLabel="Separator View">
                             <rect key="frame" x="0.0" y="333" width="375" height="2"/>
@@ -78,6 +111,27 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogN-Hh-xsP">
                             <rect key="frame" x="0.0" y="335" width="375" height="122"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="To keep track of places you've given to and see updates on your impact. Do it if you're cool." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-VY-8wy">
+                                    <rect key="frame" x="25" y="42" width="325" height="58"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why login?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="8y8-f1-8UN">
+                                    <rect key="frame" x="128" y="5" width="119" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="8y8-f1-8UN" firstAttribute="centerX" secondItem="ogN-Hh-xsP" secondAttribute="centerX" id="AA5-hr-Jdq"/>
+                                <constraint firstItem="8y8-f1-8UN" firstAttribute="top" secondItem="ogN-Hh-xsP" secondAttribute="top" constant="5" id="Q9b-vM-Dyi"/>
+                                <constraint firstItem="rHv-VY-8wy" firstAttribute="leading" secondItem="ogN-Hh-xsP" secondAttribute="leading" constant="25" id="Y0X-hp-PJm"/>
+                                <constraint firstAttribute="trailing" secondItem="rHv-VY-8wy" secondAttribute="trailing" constant="25" id="gxN-p2-JQ7"/>
+                                <constraint firstItem="rHv-VY-8wy" firstAttribute="centerY" secondItem="ogN-Hh-xsP" secondAttribute="centerY" constant="10" id="x63-7Y-LgW"/>
+                            </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwB-sB-jWh" userLabel="Separator View">
                             <rect key="frame" x="0.0" y="457" width="375" height="2"/>
@@ -88,6 +142,27 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prs-RZ-dFp">
                             <rect key="frame" x="0.0" y="459" width="375" height="208"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many licks to the center of a Tootsie Pop?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="hhC-Zd-h26">
+                                    <rect key="frame" x="25" y="10" width="325" height="58"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="364. You're welcome." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Jf8-8g-igd">
+                                    <rect key="frame" x="25" y="134" width="325" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Jf8-8g-igd" firstAttribute="leading" secondItem="prs-RZ-dFp" secondAttribute="leading" constant="25" id="3xW-n8-Ovt"/>
+                                <constraint firstItem="hhC-Zd-h26" firstAttribute="leading" secondItem="prs-RZ-dFp" secondAttribute="leading" constant="25" id="79e-0K-l6V"/>
+                                <constraint firstAttribute="trailing" secondItem="Jf8-8g-igd" secondAttribute="trailing" constant="25" id="J3u-J4-9I3"/>
+                                <constraint firstItem="hhC-Zd-h26" firstAttribute="top" secondItem="prs-RZ-dFp" secondAttribute="top" constant="10" id="SuT-8M-HU9"/>
+                                <constraint firstAttribute="trailing" secondItem="hhC-Zd-h26" secondAttribute="trailing" constant="25" id="iPc-U6-R7o"/>
+                                <constraint firstItem="Jf8-8g-igd" firstAttribute="centerY" secondItem="prs-RZ-dFp" secondAttribute="centerY" constant="40" id="r5a-FQ-h2o"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <constraints>
@@ -95,6 +170,7 @@
                         <constraint firstItem="Qr1-Cd-cQ9" firstAttribute="top" secondItem="aD2-i7-2YF" secondAttribute="bottom" id="DBs-jm-6GG"/>
                         <constraint firstItem="BwB-sB-jWh" firstAttribute="top" secondItem="ogN-Hh-xsP" secondAttribute="bottom" id="GpE-xe-J9u"/>
                         <constraint firstItem="aD2-i7-2YF" firstAttribute="height" secondItem="wN3-95-Wd1" secondAttribute="height" multiplier="1.7" id="ILR-sM-H7p"/>
+                        <constraint firstItem="Xw1-ef-CUq" firstAttribute="top" secondItem="Qr1-Cd-cQ9" secondAttribute="bottom" constant="5" id="KjB-6i-gfd"/>
                         <constraint firstAttribute="trailing" secondItem="Qr1-Cd-cQ9" secondAttribute="trailing" id="ScC-07-ETF"/>
                         <constraint firstItem="wN3-95-Wd1" firstAttribute="height" secondItem="ogN-Hh-xsP" secondAttribute="height" id="VK3-DZ-5b1"/>
                         <constraint firstItem="prs-RZ-dFp" firstAttribute="height" secondItem="aD2-i7-2YF" secondAttribute="height" id="anw-g9-lcd"/>

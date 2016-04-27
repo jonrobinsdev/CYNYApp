@@ -16,8 +16,6 @@ class SocialLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,33 +23,39 @@ class SocialLoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true);
+    }
+    
     @IBAction func SocialLoginButtonPressed(sender: AnyObject) {
         let originalPosition:CGPoint = CGPointMake(socialLoginButtonView.center.x, socialLoginButtonView.center.y);
+        self.socialButtonsView.translatesAutoresizingMaskIntoConstraints = true
         
         CATransaction.begin()
         CATransaction.setCompletionBlock({
             //callback on animations
-            self.socialLoginButtonView.hidden = true;
             self.socialButtonsView.center = originalPosition;
             self.socialLoginButtonView.center = (CGPoint: CGPointMake(self.socialLoginButtonView.center.x - 400, self.socialLoginButtonView.center.y))
+            self.socialLoginButtonView.hidden = true
         })
-
+        
         let slideLeftAnimation = CABasicAnimation(keyPath: "position")
         slideLeftAnimation.duration = 0.40
         slideLeftAnimation.fromValue = NSValue(CGPoint: originalPosition)
         let newPosition:CGPoint = CGPointMake(socialLoginButtonView.center.x - 400, socialLoginButtonView.center.y)
         slideLeftAnimation.toValue = NSValue(CGPoint: newPosition)
-        socialLoginButtonView.center = CGPointMake(socialLoginButtonView.center.x - 400, socialLoginButtonView.center.y)
         socialLoginButtonView.layer.addAnimation(slideLeftAnimation, forKey: "position")
         
         let slideLeftButtonsAnimation = CABasicAnimation(keyPath: "position")
         slideLeftButtonsAnimation.duration = 0.40
         slideLeftButtonsAnimation.fromValue = NSValue(CGPoint: CGPointMake(socialButtonsView.center.x, socialButtonsView.center.y))
         slideLeftButtonsAnimation.toValue = NSValue(CGPoint: originalPosition)
-        socialButtonsView.center = originalPosition
         self.pageIndicator.currentPage = 1
         socialButtonsView.layer.addAnimation(slideLeftButtonsAnimation, forKey: "position")
-        
         CATransaction.commit()
     }
     

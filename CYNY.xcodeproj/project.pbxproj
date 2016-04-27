@@ -17,6 +17,7 @@
 		8F7D96F61CCC057E00B2C3F2 /* SocialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D96F51CCC057E00B2C3F2 /* SocialLoginViewController.swift */; };
 		8FE154A11CCF17D700AE2844 /* CoordinatesInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE154A01CCF17D700AE2844 /* CoordinatesInputViewController.swift */; };
 		8FE154A31CCF20E000AE2844 /* CoordinatesInfoNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE154A21CCF20E000AE2844 /* CoordinatesInfoNib.xib */; };
+		8FE154A51CD006B000AE2844 /* CoordinatesInfoNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE154A41CD006B000AE2844 /* CoordinatesInfoNib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8F7D96F51CCC057E00B2C3F2 /* SocialLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginViewController.swift; sourceTree = "<group>"; };
 		8FE154A01CCF17D700AE2844 /* CoordinatesInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatesInputViewController.swift; sourceTree = "<group>"; };
 		8FE154A21CCF20E000AE2844 /* CoordinatesInfoNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoordinatesInfoNib.xib; sourceTree = "<group>"; };
+		8FE154A41CD006B000AE2844 /* CoordinatesInfoNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatesInfoNib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				8F7D96C41CCBECE300B2C3F2 /* AppDelegate.swift */,
 				8F7D96F51CCC057E00B2C3F2 /* SocialLoginViewController.swift */,
 				8FE154A01CCF17D700AE2844 /* CoordinatesInputViewController.swift */,
+				8FE154A41CD006B000AE2844 /* CoordinatesInfoNib.swift */,
 				8FE154A21CCF20E000AE2844 /* CoordinatesInfoNib.xib */,
 				8F7D96C81CCBECE400B2C3F2 /* Main.storyboard */,
 				8F7D96CE1CCBECE400B2C3F2 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 			files = (
 				8F7D96CD1CCBECE400B2C3F2 /* CYNY.xcdatamodeld in Sources */,
 				8FE154A11CCF17D700AE2844 /* CoordinatesInputViewController.swift in Sources */,
+				8FE154A51CD006B000AE2844 /* CoordinatesInfoNib.swift in Sources */,
 				8F7D96F61CCC057E00B2C3F2 /* SocialLoginViewController.swift in Sources */,
 				8F7D96C51CCBECE300B2C3F2 /* AppDelegate.swift in Sources */,
 			);
